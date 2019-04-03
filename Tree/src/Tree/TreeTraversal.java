@@ -33,6 +33,7 @@ public class TreeTraversal {
 	
 	
 	public static void main(String[] args) {
+			
 		TreeCreator creator=new TreeCreator();
 		TreeTraversal treaversal =new TreeTraversal();
 		
@@ -42,6 +43,9 @@ public class TreeTraversal {
 		treaversal.inOrder(sampleTree);
 		System.out.println();
 		treaversal.postOrder(sampleTree);
-		
-	}
+		System.out.println();
+		System.out.println("=====");
+		TreeNode tree=creator.creatorTree("ABDEGCF", "DBGEACF");
+		treaversal.postOrder(tree);
+		}
 }
